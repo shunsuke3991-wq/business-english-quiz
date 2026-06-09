@@ -6,382 +6,102 @@
 <title>Business English Daily Quiz</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
   :root {
-    --bg: #F8F7F4;
-    --surface: #FFFFFF;
-    --border: rgba(0,0,0,0.1);
-    --border-strong: rgba(0,0,0,0.2);
-    --text: #1A1A1A;
-    --text-sub: #666;
-    --text-hint: #999;
-    --blue-bg: #E6F1FB;
-    --blue-text: #0C447C;
-    --blue-mid: #378ADD;
-    --green-bg: #EAF3DE;
-    --green-text: #27500A;
-    --green-mid: #639922;
-    --red-bg: #FCEBEB;
-    --red-text: #791F1F;
-    --amber-bg: #FAEEDA;
-    --amber-text: #633806;
-    --teal-bg: #E1F5EE;
-    --teal-text: #085041;
-    --teal-mid: #1D9E75;
-    --radius: 10px;
-    --radius-lg: 14px;
+    --bg: #F8F7F4; --surface: #FFFFFF;
+    --border: rgba(0,0,0,0.1); --border-strong: rgba(0,0,0,0.2);
+    --text: #1A1A1A; --text-sub: #666; --text-hint: #999;
+    --blue-bg: #E6F1FB; --blue-text: #0C447C; --blue-mid: #378ADD;
+    --green-bg: #EAF3DE; --green-text: #27500A; --green-mid: #639922;
+    --red-bg: #FCEBEB; --red-text: #791F1F;
+    --teal-bg: #E1F5EE; --teal-text: #085041; --teal-mid: #1D9E75;
+    --amber-bg: #FFF4E0; --amber-text: #7A4500; --amber-mid: #E08C00;
+    --purple-bg: #F0EBFA; --purple-text: #4A1D8C; --purple-mid: #7C3AED;
+    --radius: 10px; --radius-lg: 14px;
   }
-
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-    padding: 0 0 80px;
-  }
-
-  header {
-    background: var(--surface);
-    border-bottom: 0.5px solid var(--border);
-    padding: 16px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-  }
-
-  .logo {
-    display: flex;
-    align-items: baseline;
-    gap: 8px;
-  }
-
-  .logo-main {
-    font-size: 17px;
-    font-weight: 600;
-    letter-spacing: -0.3px;
-    color: var(--text);
-  }
-
-  .logo-date {
-    font-size: 12px;
-    color: var(--text-hint);
-    font-weight: 400;
-  }
-
-  .header-actions {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-  }
-
-  .btn-copy {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 14px;
-    background: var(--surface);
-    border: 0.5px solid var(--border-strong);
-    border-radius: 20px;
-    font-size: 13px;
-    color: var(--text-sub);
-    cursor: pointer;
-    transition: background 0.15s;
-    white-space: nowrap;
-  }
-
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; padding: 0 0 80px; }
+  header { background: var(--surface); border-bottom: 0.5px solid var(--border); padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; }
+  .logo { display: flex; align-items: baseline; gap: 8px; }
+  .logo-main { font-size: 17px; font-weight: 600; letter-spacing: -0.3px; }
+  .logo-date { font-size: 12px; color: var(--text-hint); }
+  .btn-copy { display: flex; align-items: center; gap: 6px; padding: 7px 14px; background: var(--surface); border: 0.5px solid var(--border-strong); border-radius: 20px; font-size: 13px; color: var(--text-sub); cursor: pointer; transition: background 0.15s; white-space: nowrap; }
   .btn-copy:hover { background: var(--bg); }
   .btn-copy.copied { color: var(--green-text); border-color: var(--green-mid); background: var(--green-bg); }
-
-  main {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 28px 20px 0;
-  }
-
-  .day-banner {
-    background: linear-gradient(135deg, #185FA5 0%, #1D9E75 100%);
-    border-radius: var(--radius-lg);
-    padding: 20px 24px;
-    margin-bottom: 24px;
-    color: white;
-  }
-
+  main { max-width: 600px; margin: 0 auto; padding: 28px 20px 0; }
+  .day-banner { background: linear-gradient(135deg, #185FA5 0%, #1D9E75 100%); border-radius: var(--radius-lg); padding: 20px 24px; margin-bottom: 20px; color: white; }
   .day-banner-label { font-size: 11px; opacity: 0.75; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
   .day-banner-title { font-size: 20px; font-weight: 600; margin-bottom: 2px; }
   .day-banner-sub { font-size: 13px; opacity: 0.8; }
-
-  .scorebar {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-bottom: 24px;
-  }
-
-  .score-card {
-    background: var(--surface);
-    border: 0.5px solid var(--border);
-    border-radius: var(--radius);
-    padding: 12px 14px;
-    text-align: center;
-  }
-
+  .section-divider { display: flex; align-items: center; gap: 10px; margin: 20px 0 14px; }
+  .section-divider-line { flex: 1; height: 0.5px; background: var(--border-strong); }
+  .section-divider-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; padding: 4px 12px; border-radius: 20px; white-space: nowrap; }
+  .label-review { background: var(--amber-bg); color: var(--amber-text); }
+  .label-vocab { background: var(--blue-bg); color: var(--blue-text); }
+  .label-grammar { background: var(--teal-bg); color: var(--teal-text); }
+  .label-native { background: var(--purple-bg); color: var(--purple-text); }
+  .scorebar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 16px; }
+  .score-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius); padding: 12px 14px; text-align: center; }
   .score-card-label { font-size: 11px; color: var(--text-hint); margin-bottom: 4px; }
-  .score-card-val { font-size: 20px; font-weight: 600; color: var(--text); }
-
-  .progress-wrap { margin-bottom: 24px; }
+  .score-card-val { font-size: 20px; font-weight: 600; }
+  .progress-wrap { margin-bottom: 20px; }
   .progress-track { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
   .progress-fill { height: 100%; background: var(--blue-mid); border-radius: 2px; transition: width 0.4s ease; }
   .progress-label { font-size: 12px; color: var(--text-hint); margin-top: 6px; }
-
-  .quiz-card {
-    background: var(--surface);
-    border: 0.5px solid var(--border);
-    border-radius: var(--radius-lg);
-    padding: 24px;
-    margin-bottom: 14px;
-  }
-
-  .q-meta {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 14px;
-  }
-
-  .q-type-tag {
-    font-size: 11px;
-    font-weight: 600;
-    padding: 3px 10px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-  }
-
+  .quiz-card { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 24px; margin-bottom: 14px; }
+  .quiz-card.is-review { border-color: var(--amber-mid); border-width: 1px; }
+  .q-meta { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+  .q-type-tag { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px; }
   .tag-vocab { background: var(--blue-bg); color: var(--blue-text); }
   .tag-grammar { background: var(--teal-bg); color: var(--teal-text); }
-
-  .q-category {
-    font-size: 12px;
-    color: var(--text-hint);
-  }
-
-  .q-word {
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: -0.5px;
-    color: var(--text);
-    margin-bottom: 4px;
-    line-height: 1.2;
-  }
-
-  .q-pos {
-    font-size: 13px;
-    color: var(--text-hint);
-    font-style: italic;
-    margin-bottom: 18px;
-  }
-
-  .q-sentence {
-    font-size: 15px;
-    color: var(--text);
-    line-height: 1.7;
-    margin-bottom: 18px;
-    padding: 14px 16px;
-    background: var(--bg);
-    border-radius: var(--radius);
-    border-left: 3px solid var(--teal-mid);
-  }
-
-  .q-sentence .blank {
-    display: inline-block;
-    min-width: 80px;
-    border-bottom: 2px solid var(--text);
-    font-weight: 600;
-    text-align: center;
-    padding: 0 4px;
-  }
-
+  .tag-native { background: var(--purple-bg); color: var(--purple-text); }
+  .tag-review { background: var(--amber-bg); color: var(--amber-text); }
+  .q-category { font-size: 12px; color: var(--text-hint); }
+  .q-word { font-size: 28px; font-weight: 600; letter-spacing: -0.5px; margin-bottom: 4px; line-height: 1.2; }
+  .q-pos { font-size: 13px; color: var(--text-hint); font-style: italic; margin-bottom: 18px; }
+  .q-sentence { font-size: 15px; color: var(--text); line-height: 1.7; margin-bottom: 18px; padding: 14px 16px; background: var(--bg); border-radius: var(--radius); border-left: 3px solid var(--teal-mid); }
+  .q-sentence.native-style { border-left-color: var(--purple-mid); }
+  .q-sentence .blank { display: inline-block; min-width: 80px; border-bottom: 2px solid var(--text); font-weight: 600; text-align: center; padding: 0 4px; }
   .options { display: flex; flex-direction: column; gap: 9px; }
-
-  .opt-btn {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 13px 16px;
-    background: var(--surface);
-    border: 0.5px solid var(--border-strong);
-    border-radius: var(--radius);
-    font-size: 14px;
-    color: var(--text);
-    cursor: pointer;
-    transition: border-color 0.12s, background 0.12s;
-    text-align: left;
-    font-family: inherit;
-    line-height: 1.4;
-  }
-
-  .opt-btn:hover:not(:disabled) {
-    background: var(--bg);
-    border-color: var(--blue-mid);
-  }
-
-  .opt-label {
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
-    border: 1px solid var(--border-strong);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: 600;
-    flex-shrink: 0;
-    color: var(--text-sub);
-    transition: background 0.12s, border-color 0.12s;
-  }
-
+  .opt-btn { display: flex; align-items: center; gap: 12px; padding: 13px 16px; background: var(--surface); border: 0.5px solid var(--border-strong); border-radius: var(--radius); font-size: 14px; color: var(--text); cursor: pointer; transition: border-color 0.12s, background 0.12s; text-align: left; font-family: inherit; line-height: 1.4; }
+  .opt-btn:hover:not(:disabled) { background: var(--bg); border-color: var(--blue-mid); }
+  .opt-label { width: 26px; height: 26px; border-radius: 50%; border: 1px solid var(--border-strong); display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; flex-shrink: 0; color: var(--text-sub); }
   .opt-btn.correct { background: var(--green-bg); border-color: var(--green-mid); }
   .opt-btn.correct .opt-label { background: var(--green-mid); border-color: var(--green-mid); color: white; }
   .opt-btn.wrong { background: var(--red-bg); border-color: #E24B4A; }
   .opt-btn.wrong .opt-label { background: #E24B4A; border-color: #E24B4A; color: white; }
   .opt-btn:disabled { cursor: default; }
-
-  .feedback-box {
-    margin-top: 14px;
-    padding: 12px 16px;
-    border-radius: var(--radius);
-    font-size: 13px;
-    line-height: 1.6;
-    display: none;
-  }
-
+  .feedback-box { margin-top: 14px; padding: 12px 16px; border-radius: var(--radius); font-size: 13px; line-height: 1.6; display: none; }
   .feedback-box.show { display: block; }
   .feedback-box.ok { background: var(--green-bg); color: var(--green-text); }
   .feedback-box.ng { background: var(--red-bg); color: var(--red-text); }
-
-  .next-btn {
-    width: 100%;
-    padding: 14px;
-    background: var(--surface);
-    border: 0.5px solid var(--border-strong);
-    border-radius: var(--radius);
-    font-size: 15px;
-    color: var(--text);
-    cursor: pointer;
-    font-family: inherit;
-    transition: background 0.12s;
-    display: none;
-    font-weight: 500;
-  }
-
+  .next-btn { width: 100%; padding: 14px; background: var(--surface); border: 0.5px solid var(--border-strong); border-radius: var(--radius); font-size: 15px; color: var(--text); cursor: pointer; font-family: inherit; transition: background 0.12s; display: none; font-weight: 500; }
   .next-btn:hover { background: var(--bg); }
-
-  /* Loading */
-  .loading-screen {
-    text-align: center;
-    padding: 60px 20px;
-    color: var(--text-sub);
-  }
-
-  .spinner {
-    width: 32px;
-    height: 32px;
-    border: 2.5px solid var(--border);
-    border-top-color: var(--blue-mid);
-    border-radius: 50%;
-    animation: spin 0.75s linear infinite;
-    margin: 0 auto 16px;
-  }
-
+  .loading-screen { text-align: center; padding: 60px 20px; color: var(--text-sub); }
+  .spinner { width: 32px; height: 32px; border: 2.5px solid var(--border); border-top-color: var(--blue-mid); border-radius: 50%; animation: spin 0.75s linear infinite; margin: 0 auto 16px; }
   @keyframes spin { to { transform: rotate(360deg); } }
-
   .loading-screen p { font-size: 15px; margin-bottom: 4px; }
   .loading-screen small { font-size: 13px; color: var(--text-hint); }
-
-  /* Result */
-  .result-screen {
-    background: var(--surface);
-    border: 0.5px solid var(--border);
-    border-radius: var(--radius-lg);
-    padding: 40px 24px;
-    text-align: center;
-  }
-
+  .result-screen { background: var(--surface); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 40px 24px; text-align: center; }
   .result-emoji { font-size: 40px; margin-bottom: 12px; }
-  .result-score { font-size: 48px; font-weight: 700; color: var(--text); letter-spacing: -1px; margin-bottom: 6px; }
-  .result-label { font-size: 15px; color: var(--text-sub); margin-bottom: 28px; line-height: 1.5; }
-
-  .result-breakdown {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 28px;
-  }
-
-  .breakdown-item {
-    background: var(--bg);
-    border-radius: var(--radius);
-    padding: 12px;
-  }
-
+  .result-score { font-size: 48px; font-weight: 700; letter-spacing: -1px; margin-bottom: 6px; }
+  .result-label { font-size: 15px; color: var(--text-sub); margin-bottom: 24px; line-height: 1.5; }
+  .result-breakdown { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 24px; }
+  .breakdown-item { background: var(--bg); border-radius: var(--radius); padding: 12px; }
   .breakdown-item-label { font-size: 11px; color: var(--text-hint); margin-bottom: 4px; }
   .breakdown-item-val { font-size: 18px; font-weight: 600; }
-  .breakdown-item-val.green { color: var(--green-text); }
   .breakdown-item-val.blue { color: var(--blue-text); }
-
-  .restart-btn {
-    padding: 13px 36px;
-    background: var(--text);
-    border: none;
-    border-radius: var(--radius);
-    font-size: 15px;
-    color: white;
-    cursor: pointer;
-    font-family: inherit;
-    font-weight: 500;
-    transition: opacity 0.12s;
-  }
-
+  .breakdown-item-val.green { color: var(--green-text); }
+  .breakdown-item-val.purple { color: var(--purple-text); }
+  .breakdown-item-val.amber { color: var(--amber-text); }
+  .restart-btn { padding: 13px 36px; background: var(--text); border: none; border-radius: var(--radius); font-size: 15px; color: white; cursor: pointer; font-family: inherit; font-weight: 500; }
   .restart-btn:hover { opacity: 0.85; }
-
-  .share-reminder {
-    margin-top: 16px;
-    font-size: 13px;
-    color: var(--text-hint);
-  }
-
-  /* Error */
-  .error-screen {
-    text-align: center;
-    padding: 60px 20px;
-  }
-
+  .mistakes-notice { background: var(--amber-bg); border: 0.5px solid var(--amber-mid); border-radius: var(--radius); padding: 12px 16px; margin-bottom: 16px; font-size: 13px; color: var(--amber-text); }
+  .error-screen { text-align: center; padding: 60px 20px; }
   .error-screen p { font-size: 15px; color: var(--text-sub); margin-bottom: 16px; }
-
-  .retry-btn {
-    padding: 10px 28px;
-    border: 0.5px solid var(--border-strong);
-    border-radius: var(--radius);
-    background: var(--surface);
-    font-size: 14px;
-    cursor: pointer;
-    font-family: inherit;
-    color: var(--text);
-  }
-
-  @media (max-width: 480px) {
-    header { padding: 12px 16px; }
-    main { padding: 20px 14px 0; }
-    .q-word { font-size: 24px; }
-    .day-banner { padding: 16px 18px; }
-  }
+  .retry-btn { padding: 10px 28px; border: 0.5px solid var(--border-strong); border-radius: var(--radius); background: var(--surface); font-size: 14px; cursor: pointer; font-family: inherit; color: var(--text); }
+  @media (max-width: 480px) { header { padding: 12px 16px; } main { padding: 20px 14px 0; } .q-word { font-size: 24px; } }
 </style>
 </head>
 <body>
-
 <header>
   <div class="logo">
     <span class="logo-main">Business English</span>
@@ -394,281 +114,302 @@
     </button>
   </div>
 </header>
-
 <main id="main">
-  <div class="loading-screen" id="loading-view">
+  <div class="loading-screen">
     <div class="spinner"></div>
-    <p>今日の問題を生成中...</p>
-    <small>AIがビジネス英語の問題を準備しています</small>
+    <p>今日の問題を読み込み中...</p>
+    <small>しばらくお待ちください</small>
   </div>
 </main>
-
 <script>
-const TOTAL = 25;
 const VOCAB_COUNT = 10;
 const GRAMMAR_COUNT = 15;
+const NATIVE_COUNT = 5;
+const BASE_TOTAL = VOCAB_COUNT + GRAMMAR_COUNT + NATIVE_COUNT; // 30
 
 const todayKey = () => {
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
 };
-
-const formatDate = () => {
-  const d = new Date();
-  return d.toLocaleDateString('ja-JP', { year:'numeric', month:'long', day:'numeric', weekday:'short' });
-};
+const formatDate = () => new Date().toLocaleDateString('ja-JP', { year:'numeric', month:'long', day:'numeric', weekday:'short' });
 
 document.getElementById('header-date').textContent = formatDate();
 
 let questions = [];
+let reviewQuestions = [];
 let current = 0;
 let correctCount = 0;
-let vocabCorrect = 0;
-let grammarCorrect = 0;
+let vocabCorrect = 0, grammarCorrect = 0, nativeCorrect = 0, reviewCorrect = 0;
+let mistakesThisSession = [];
 let answered = false;
 const LABELS = ['A','B','C','D'];
 
-// ---- Cache ----
+// ---- Cache & Storage ----
 function getCached() {
-  try {
-    const raw = localStorage.getItem('beq_' + todayKey());
-    if (raw) return JSON.parse(raw);
-  } catch(e) {}
-  return null;
+  try { const r = localStorage.getItem('beq_' + todayKey()); return r ? JSON.parse(r) : null; } catch(e) { return null; }
 }
-
 function setCache(data) {
   try {
     localStorage.setItem('beq_' + todayKey(), JSON.stringify(data));
-    // clean old keys
-    Object.keys(localStorage).forEach(k => {
-      if (k.startsWith('beq_') && k !== 'beq_' + todayKey()) localStorage.removeItem(k);
-    });
+    Object.keys(localStorage).forEach(k => { if (k.startsWith('beq_') && k !== 'beq_' + todayKey()) localStorage.removeItem(k); });
   } catch(e) {}
 }
+function getMistakes() {
+  try { const r = localStorage.getItem('beq_mistakes'); return r ? JSON.parse(r) : []; } catch(e) { return []; }
+}
+function saveMistakes(mistakes) {
+  try { localStorage.setItem('beq_mistakes', JSON.stringify(mistakes)); } catch(e) {}
+}
 
-// ---- API ----
+// ---- Fetch ----
 async function fetchQuestions() {
-  // questions.json はGASが毎朝GitHubにアップロードする
   const res = await fetch('./questions.json?v=' + todayKey());
   if (!res.ok) throw new Error('questions.json not found: ' + res.status);
   const data = await res.json();
-  if (!Array.isArray(data) || data.length < TOTAL) throw new Error('Invalid questions.json');
+  if (!Array.isArray(data) || data.length < BASE_TOTAL) throw new Error('Invalid questions.json');
   return data;
 }
 
-// ---- UI Builders ----
+// ---- UI ----
+function sectionDivider(type, label) {
+  return `<div class="section-divider"><div class="section-divider-line"></div><span class="section-divider-label label-${type}">${label}</span><div class="section-divider-line"></div></div>`;
+}
+
+function buildBanner(reviewCount) {
+  const sub = (reviewCount > 0 ? `復習 ${reviewCount}問 ＋ ` : '') + `単語 ${VOCAB_COUNT}問 ＋ 文法 ${GRAMMAR_COUNT}問 ＋ 表現 ${NATIVE_COUNT}問`;
+  return `<div class="day-banner">
+    <div class="day-banner-label">Today's Quiz</div>
+    <div class="day-banner-title">今日のビジネス英語</div>
+    <div class="day-banner-sub">${sub} ・ 毎日更新</div>
+  </div>`;
+}
+
 function buildScorebar() {
-  return `
-    <div class="scorebar" id="scorebar">
-      <div class="score-card"><div class="score-card-label">問題</div><div class="score-card-val" id="sc-q">— / ${TOTAL}</div></div>
-      <div class="score-card"><div class="score-card-label">正解</div><div class="score-card-val" id="sc-c">0</div></div>
-      <div class="score-card"><div class="score-card-label">正答率</div><div class="score-card-val" id="sc-r">—</div></div>
-    </div>
-    <div class="progress-wrap">
-      <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
-      <div class="progress-label" id="progress-label">0 / ${TOTAL} 問完了</div>
-    </div>`;
+  const total = questions.length;
+  return `<div class="scorebar" id="scorebar">
+    <div class="score-card"><div class="score-card-label">問題</div><div class="score-card-val" id="sc-q">1 / ${total}</div></div>
+    <div class="score-card"><div class="score-card-label">正解</div><div class="score-card-val" id="sc-c">0</div></div>
+    <div class="score-card"><div class="score-card-label">正答率</div><div class="score-card-val" id="sc-r">—</div></div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+    <div class="progress-label" id="progress-label">0 / ${total} 問完了</div>
+  </div>`;
 }
 
 function updateScorebar() {
-  const qEl = document.getElementById('sc-q');
-  const cEl = document.getElementById('sc-c');
-  const rEl = document.getElementById('sc-r');
-  const pFill = document.getElementById('progress-fill');
-  const pLabel = document.getElementById('progress-label');
-  if (!qEl) return;
-  qEl.textContent = (current + 1) + ' / ' + TOTAL;
-  cEl.textContent = correctCount;
-  rEl.textContent = current > 0 ? Math.round(correctCount / current * 100) + '%' : '—';
-  pFill.style.width = (current / TOTAL * 100) + '%';
-  pLabel.textContent = current + ' / ' + TOTAL + ' 問完了';
+  const total = questions.length;
+  const qEl = document.getElementById('sc-q'); if (!qEl) return;
+  document.getElementById('sc-q').textContent = (current + 1) + ' / ' + total;
+  document.getElementById('sc-c').textContent = correctCount;
+  document.getElementById('sc-r').textContent = current > 0 ? Math.round(correctCount / current * 100) + '%' : '—';
+  document.getElementById('progress-fill').style.width = (current / total * 100) + '%';
+  document.getElementById('progress-label').textContent = current + ' / ' + total + ' 問完了';
 }
 
-function buildDayBanner() {
-  return `
-    <div class="day-banner">
-      <div class="day-banner-label">Today's Quiz</div>
-      <div class="day-banner-title">今日のビジネス英語</div>
-      <div class="day-banner-sub">単語 ${VOCAB_COUNT}問 ＋ 文法 ${GRAMMAR_COUNT}問 ・ 毎日更新</div>
-    </div>`;
+function getTypeTag(q) {
+  if (q.isReview) return `<span class="q-type-tag tag-review">復習</span>`;
+  if (q.type === 'vocab') return `<span class="q-type-tag tag-vocab">単語</span>`;
+  if (q.type === 'grammar') return `<span class="q-type-tag tag-grammar">文法</span>`;
+  if (q.type === 'native') return `<span class="q-type-tag tag-native">ネイティブ表現</span>`;
+  return '';
 }
 
 function renderQuiz() {
   const q = questions[current];
   answered = false;
 
-  const typeTag = q.type === 'vocab'
-    ? `<span class="q-type-tag tag-vocab">単語</span>`
-    : `<span class="q-type-tag tag-grammar">文法</span>`;
-
   let questionBody = '';
   if (q.type === 'vocab') {
-    questionBody = `
-      <div class="q-word">${escHtml(q.word)}</div>
-      <div class="q-pos">${escHtml(q.partOfSpeech)}</div>`;
-  } else {
-    const sentenceHtml = escHtml(q.sentence).replace('___', '<span class="blank">___</span>');
-    questionBody = `<div class="q-sentence">${sentenceHtml}</div>`;
+    questionBody = `<div class="q-word">${escHtml(q.word)}</div><div class="q-pos">${escHtml(q.partOfSpeech || '')}</div>`;
+  } else if (q.type === 'grammar') {
+    const s = escHtml(q.sentence).replace('___', '<span class="blank">___</span>');
+    questionBody = `<div class="q-sentence">${s}</div>`;
+  } else if (q.type === 'native') {
+    const s = escHtml(q.situation || q.sentence || '');
+    questionBody = `<div class="q-sentence native-style">${s}</div>`;
   }
 
+  const isReview = q.isReview || false;
   const optionsHtml = q.options.map((opt, i) => `
     <button class="opt-btn" id="opt-${i}" onclick="handleAnswer(${i})">
       <span class="opt-label">${LABELS[i]}</span>
       <span>${escHtml(opt)}</span>
     </button>`).join('');
 
-  const card = document.getElementById('quiz-area');
-  card.innerHTML = `
-    <div class="quiz-card">
+  const total = questions.length;
+  document.getElementById('quiz-area').innerHTML = `
+    <div class="quiz-card${isReview ? ' is-review' : ''}">
       <div class="q-meta">
-        ${typeTag}
-        <span class="q-category">${escHtml(q.category)}</span>
+        ${getTypeTag(q)}
+        <span class="q-category">${escHtml(q.category || '')}</span>
+        ${isReview ? '<span style="font-size:11px;color:var(--amber-text);">前日の間違い</span>' : ''}
       </div>
       ${questionBody}
       <div class="options">${optionsHtml}</div>
       <div class="feedback-box" id="feedback"></div>
     </div>
     <button class="next-btn" id="next-btn" onclick="nextQuestion()">
-      ${current + 1 >= TOTAL ? '結果を見る →' : '次の問題 →'}
+      ${current + 1 >= total ? '結果を見る →' : '次の問題 →'}
     </button>`;
-
   updateScorebar();
 }
 
 function handleAnswer(idx) {
   if (answered) return;
   answered = true;
-
   const q = questions[current];
   const isCorrect = idx === q.correctIndex;
-
   for (let i = 0; i < q.options.length; i++) {
     const btn = document.getElementById('opt-' + i);
     btn.disabled = true;
     if (i === q.correctIndex) btn.classList.add('correct');
     else if (i === idx && !isCorrect) btn.classList.add('wrong');
   }
-
   if (isCorrect) {
     correctCount++;
-    if (q.type === 'vocab') vocabCorrect++;
-    else grammarCorrect++;
-  }
-
-  const fb = document.getElementById('feedback');
-  if (isCorrect) {
-    fb.className = 'feedback-box ok show';
-    fb.textContent = '✓ 正解！ ' + q.explanation;
+    if (q.isReview) reviewCorrect++;
+    else if (q.type === 'vocab') vocabCorrect++;
+    else if (q.type === 'grammar') grammarCorrect++;
+    else if (q.type === 'native') nativeCorrect++;
   } else {
-    fb.className = 'feedback-box ng show';
-    fb.textContent = '✗ 不正解。正解は「' + q.options[q.correctIndex] + '」。' + q.explanation;
+    // 間違えたら保存（復習問題は重複保存しない）
+    if (!q.isReview) {
+      const clean = Object.assign({}, q);
+      delete clean.isReview;
+      mistakesThisSession.push(clean);
+    }
   }
-
+  const fb = document.getElementById('feedback');
+  fb.className = 'feedback-box ' + (isCorrect ? 'ok' : 'ng') + ' show';
+  fb.textContent = isCorrect ? '✓ 正解！ ' + q.explanation : '✗ 不正解。正解は「' + q.options[q.correctIndex] + '」。' + q.explanation;
   document.getElementById('next-btn').style.display = 'block';
   updateScorebar();
 }
 
 function nextQuestion() {
   current++;
-  if (current >= TOTAL) {
-    showResult();
-  } else {
-    renderQuiz();
-  }
+  if (current >= questions.length) showResult();
+  else renderQuiz();
 }
 
 function showResult() {
+  const total = questions.length;
   document.getElementById('progress-fill').style.width = '100%';
-  document.getElementById('progress-label').textContent = TOTAL + ' / ' + TOTAL + ' 問完了（終了）';
-  document.getElementById('sc-q').textContent = TOTAL + ' / ' + TOTAL;
+  document.getElementById('progress-label').textContent = total + ' / ' + total + ' 問完了（終了）';
+  document.getElementById('sc-q').textContent = total + ' / ' + total;
 
-  const pct = Math.round(correctCount / TOTAL * 100);
+  // 間違えをlocalStorageに保存（翌日用）
+  saveMistakes(mistakesThisSession);
+
+  const pct = Math.round(correctCount / total * 100);
   const emoji = pct >= 80 ? '🎉' : pct >= 60 ? '👍' : pct >= 40 ? '📚' : '💪';
   const label = pct >= 80 ? '素晴らしい！ビジネス英語の達人です。'
               : pct >= 60 ? 'よくできました！もう少しで完璧です。'
               : pct >= 40 ? 'まだ伸びしろあり。復習してみましょう。'
               : '基礎からしっかり復習しましょう！';
 
+  const reviewCount = questions.filter(q => q.isReview).length;
+  const mistakeNotice = mistakesThisSession.length > 0
+    ? `<div class="mistakes-notice">今日の間違い <strong>${mistakesThisSession.length}問</strong> は明日の復習問題として出題されます。</div>`
+    : `<div style="font-size:13px;color:var(--green-text);background:var(--green-bg);padding:10px 14px;border-radius:var(--radius);margin-bottom:16px;">今日は全問正解！間違いなし 🎊</div>`;
+
   document.getElementById('quiz-area').innerHTML = `
     <div class="result-screen">
       <div class="result-emoji">${emoji}</div>
-      <div class="result-score">${correctCount} <span style="font-size:24px;color:var(--text-hint)">/ ${TOTAL}</span></div>
+      <div class="result-score">${correctCount} <span style="font-size:24px;color:var(--text-hint)">/ ${total}</span></div>
       <div class="result-label">${label}</div>
       <div class="result-breakdown">
-        <div class="breakdown-item">
-          <div class="breakdown-item-label">単語問題</div>
-          <div class="breakdown-item-val blue">${vocabCorrect} / ${VOCAB_COUNT}</div>
-        </div>
-        <div class="breakdown-item">
-          <div class="breakdown-item-label">文法問題</div>
-          <div class="breakdown-item-val green">${grammarCorrect} / ${GRAMMAR_COUNT}</div>
-        </div>
+        <div class="breakdown-item"><div class="breakdown-item-label">単語</div><div class="breakdown-item-val blue">${vocabCorrect} / ${VOCAB_COUNT}</div></div>
+        <div class="breakdown-item"><div class="breakdown-item-label">文法</div><div class="breakdown-item-val green">${grammarCorrect} / ${GRAMMAR_COUNT}</div></div>
+        <div class="breakdown-item"><div class="breakdown-item-label">ネイティブ表現</div><div class="breakdown-item-val purple">${nativeCorrect} / ${NATIVE_COUNT}</div></div>
+        ${reviewCount > 0 ? `<div class="breakdown-item"><div class="breakdown-item-label">復習</div><div class="breakdown-item-val amber">${reviewCorrect} / ${reviewCount}</div></div>` : ''}
       </div>
+      ${mistakeNotice}
       <button class="restart-btn" onclick="restartQuiz()">もう一度挑戦</button>
-      <div class="share-reminder">明日も新しい問題が届きます。URLをメールで共有しましょう ↑</div>
     </div>`;
 }
 
 function restartQuiz() {
-  current = 0;
-  correctCount = 0;
-  vocabCorrect = 0;
-  grammarCorrect = 0;
+  current = 0; correctCount = 0;
+  vocabCorrect = 0; grammarCorrect = 0; nativeCorrect = 0; reviewCorrect = 0;
+  mistakesThisSession = [];
   renderQuiz();
 }
 
-// ---- Copy URL ----
 function copyURL() {
-  const url = window.location.href;
-  navigator.clipboard.writeText(url).then(() => {
+  navigator.clipboard.writeText(window.location.href).then(() => {
     const btn = document.getElementById('copy-btn');
     btn.classList.add('copied');
     btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> コピーしました`;
-    setTimeout(() => {
-      btn.classList.remove('copied');
-      btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> URLをコピー`;
-    }, 2500);
-  }).catch(() => {
-    prompt('このURLをコピーしてください', url);
-  });
+    setTimeout(() => { btn.classList.remove('copied'); btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> URLをコピー`; }, 2500);
+  }).catch(() => { prompt('このURLをコピーしてください', window.location.href); });
 }
 
-// ---- Escape HTML ----
 function escHtml(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
 
-// ---- Init ----
 async function init() {
   const main = document.getElementById('main');
-  main.innerHTML = `
-    <div class="loading-screen" id="loading-view">
-      <div class="spinner"></div>
-      <p>今日の問題を読み込み中...</p>
-      <small>しばらくお待ちください</small>
-    </div>`;
-
+  main.innerHTML = `<div class="loading-screen"><div class="spinner"></div><p>今日の問題を読み込み中...</p><small>しばらくお待ちください</small></div>`;
   try {
-    let qs = getCached();
-    if (!qs) {
-      qs = await fetchQuestions();
-      if (!Array.isArray(qs) || qs.length < TOTAL) throw new Error('Insufficient questions');
-      setCache(qs.slice(0, TOTAL));
+    let baseQs = getCached();
+    if (!baseQs) {
+      baseQs = await fetchQuestions();
+      setCache(baseQs.slice(0, BASE_TOTAL));
     }
-    questions = qs.slice(0, TOTAL);
+    baseQs = baseQs.slice(0, BASE_TOTAL);
 
-    main.innerHTML = buildDayBanner() + buildScorebar() + `<div id="quiz-area"></div>`;
-    renderQuiz();
+    // 前日の間違い問題を先頭に追加
+    const mistakes = getMistakes();
+    reviewQuestions = mistakes.map(q => Object.assign({}, q, { isReview: true }));
+    questions = [...reviewQuestions, ...baseQs];
 
+    const reviewCount = reviewQuestions.length;
+    main.innerHTML = buildBanner(reviewCount) + buildScorebar() + `<div id="quiz-area"></div>`;
+
+    // セクション区切りを挿入するため、renderQuizを拡張
+    renderQuizWithDividers();
   } catch(e) {
-    main.innerHTML = `
-      <div class="error-screen">
-        <p>問題の読み込みに失敗しました。<br>ネットワーク接続を確認してもう一度お試しください。</p>
-        <button class="retry-btn" onclick="init()">再読み込み</button>
-      </div>`;
+    main.innerHTML = `<div class="error-screen"><p>問題の読み込みに失敗しました。<br>ネットワーク接続を確認してもう一度お試しください。</p><button class="retry-btn" onclick="init()">再読み込み</button></div>`;
   }
 }
+
+function renderQuizWithDividers() {
+  // 最初の問題のセクション区切りを表示
+  insertSectionDividerIfNeeded();
+  renderQuiz();
+}
+
+function insertSectionDividerIfNeeded() {
+  const quizArea = document.getElementById('quiz-area');
+  if (!quizArea) return;
+  const reviewCount = reviewQuestions.length;
+  // セクション区切りはrenderQuiz内のcard上部に表示する方式に変更 -> bannerで十分
+}
+
+// セクション区切りをカード上部に動的に表示
+const origRenderQuiz = renderQuiz;
+renderQuiz = function() {
+  origRenderQuiz();
+  // セクション境界に区切りラベルを追加
+  const reviewCount = reviewQuestions.length;
+  const boundaries = [
+    { idx: 0, type: reviewCount > 0 ? 'review' : 'vocab', label: reviewCount > 0 ? '📋 復習問題' : '📖 単語問題' },
+    { idx: reviewCount, type: 'vocab', label: '📖 単語問題' },
+    { idx: reviewCount + VOCAB_COUNT, type: 'grammar', label: '✍️ 文法問題' },
+    { idx: reviewCount + VOCAB_COUNT + GRAMMAR_COUNT, type: 'native', label: '💬 ネイティブ表現' },
+  ];
+  const match = boundaries.find(b => b.idx === current);
+  if (match && (match.idx > 0 || reviewCount === 0)) {
+    const divEl = document.createElement('div');
+    divEl.className = 'section-divider';
+    divEl.innerHTML = `<div class="section-divider-line"></div><span class="section-divider-label label-${match.type}">${match.label}</span><div class="section-divider-line"></div>`;
+    const area = document.getElementById('quiz-area');
+    if (area) area.insertBefore(divEl, area.firstChild);
+  }
+};
 
 init();
 </script>
