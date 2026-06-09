@@ -1,0 +1,337 @@
+[
+  {
+    "type": "vocab",
+    "word": "leverage",
+    "partOfSpeech": "noun",
+    "category": "Finance",
+    "options": [
+      "レバレッジ・てこの原理",
+      "流動性",
+      "担保",
+      "配当"
+    ],
+    "correctIndex": 0,
+    "explanation": "borrowed capital（借入資本）を使用して投資収益を高めること。"
+  },
+  {
+    "type": "vocab",
+    "word": "dilution",
+    "partOfSpeech": "noun",
+    "category": "Corporate Finance",
+    "options": [
+      "希薄化",
+      "分散化",
+      "多様化",
+      "統合化"
+    ],
+    "correctIndex": 0,
+    "explanation": "新株発行により既存株主の持分比率が減少すること。"
+  },
+  {
+    "type": "vocab",
+    "word": "arbitrage",
+    "partOfSpeech": "noun",
+    "category": "Investment",
+    "options": [
+      "裁定取引",
+      "先物取引",
+      "信用取引",
+      "現物取引"
+    ],
+    "correctIndex": 0,
+    "explanation": "市場間の価格差を利用して利益を得る取引手法。"
+  },
+  {
+    "type": "vocab",
+    "word": "liquidate",
+    "partOfSpeech": "verb",
+    "category": "Finance",
+    "options": [
+      "清算する",
+      "統合する",
+      "拡大する",
+      "延期する"
+    ],
+    "correctIndex": 0,
+    "explanation": "資産を現金化する、または事業を解散すること。"
+  },
+  {
+    "type": "vocab",
+    "word": "stakeholder",
+    "partOfSpeech": "noun",
+    "category": "Corporate Governance",
+    "options": [
+      "利害関係者",
+      "株主",
+      "債権者",
+      "経営者"
+    ],
+    "correctIndex": 0,
+    "explanation": "企業活動に関わる全ての利害関係を持つ個人や団体。"
+  },
+  {
+    "type": "vocab",
+    "word": "underwriter",
+    "partOfSpeech": "noun",
+    "category": "Investment Banking",
+    "options": [
+      "引受業者",
+      "監査人",
+      "仲介業者",
+      "評価者"
+    ],
+    "correctIndex": 0,
+    "explanation": "証券発行時にリスクを負担して引き受ける金融機関。"
+  },
+  {
+    "type": "vocab",
+    "word": "remuneration",
+    "partOfSpeech": "noun",
+    "category": "Human Resources",
+    "options": [
+      "報酬",
+      "解雇",
+      "昇進",
+      "研修"
+    ],
+    "correctIndex": 0,
+    "explanation": "労働やサービスに対する金銭的な対価。"
+  },
+  {
+    "type": "vocab",
+    "word": "synergy",
+    "partOfSpeech": "noun",
+    "category": "M&A",
+    "options": [
+      "相乗効果",
+      "競争優位",
+      "市場占有率",
+      "収益性"
+    ],
+    "correctIndex": 0,
+    "explanation": "企業合併などで、個別の合計以上の効果が生まれること。"
+  },
+  {
+    "type": "vocab",
+    "word": "prospectus",
+    "partOfSpeech": "noun",
+    "category": "Securities",
+    "options": [
+      "目論見書",
+      "決算書",
+      "監査報告書",
+      "事業計画書"
+    ],
+    "correctIndex": 0,
+    "explanation": "証券発行時に投資家に提供される詳細な情報文書。"
+  },
+  {
+    "type": "vocab",
+    "word": "receivables",
+    "partOfSpeech": "noun",
+    "category": "Accounting",
+    "options": [
+      "売掛金",
+      "買掛金",
+      "未払金",
+      "前払金"
+    ],
+    "correctIndex": 0,
+    "explanation": "顧客から受け取る権利のある未回収の代金。"
+  },
+  {
+    "type": "grammar",
+    "category": "Business Writing",
+    "sentence": "Please find the report ___ to this email.",
+    "options": [
+      "attached",
+      "attaching",
+      "attachment",
+      "attach"
+    ],
+    "correctIndex": 0,
+    "explanation": "「添付された」という過去分詞形を使う。ビジネスメールの定型表現。"
+  },
+  {
+    "type": "grammar",
+    "category": "Meetings",
+    "sentence": "The board meeting has been ___ until next Monday.",
+    "options": [
+      "postponed",
+      "delayed",
+      "cancelled",
+      "extended"
+    ],
+    "correctIndex": 0,
+    "explanation": "会議の延期にはpostponeが最適。delayは遅延のニュアンス。"
+  },
+  {
+    "type": "grammar",
+    "category": "Contracts",
+    "sentence": "Both parties must ___ to the terms and conditions.",
+    "options": [
+      "adhere",
+      "comply",
+      "follow",
+      "obey"
+    ],
+    "correctIndex": 0,
+    "explanation": "契約条件には「adhere to」が最も適切な表現。"
+  },
+  {
+    "type": "grammar",
+    "category": "Financial Reports",
+    "sentence": "Our revenue has increased ___ 15% compared to last year.",
+    "options": [
+      "by",
+      "with",
+      "at",
+      "for"
+    ],
+    "correctIndex": 0,
+    "explanation": "増減の幅を示すときは「by」を使用する。"
+  },
+  {
+    "type": "grammar",
+    "category": "Negotiations",
+    "sentence": "We are prepared to ___ a compromise on the pricing.",
+    "options": [
+      "reach",
+      "make",
+      "do",
+      "get"
+    ],
+    "correctIndex": 0,
+    "explanation": "compromiseには「reach」を使う。「reach an agreement」も同様。"
+  },
+  {
+    "type": "grammar",
+    "category": "Business Correspondence",
+    "sentence": "I am writing ___ your inquiry about our new product line.",
+    "options": [
+      "in response to",
+      "for responding",
+      "to respond",
+      "as response"
+    ],
+    "correctIndex": 0,
+    "explanation": "問い合わせへの返信には「in response to」が最も丁寧で適切。"
+  },
+  {
+    "type": "grammar",
+    "category": "Presentations",
+    "sentence": "Let me ___ your attention to the figures on slide 5.",
+    "options": [
+      "draw",
+      "pay",
+      "give",
+      "make"
+    ],
+    "correctIndex": 0,
+    "explanation": "「draw attention to」で注意を引く、という定型表現。"
+  },
+  {
+    "type": "grammar",
+    "category": "Corporate Strategy",
+    "sentence": "The company plans to ___ into the Asian market next year.",
+    "options": [
+      "expand",
+      "extent",
+      "extend",
+      "expanse"
+    ],
+    "correctIndex": 0,
+    "explanation": "市場拡大には「expand into」を使う。extendは期間延長など。"
+  },
+  {
+    "type": "grammar",
+    "category": "Risk Management",
+    "sentence": "We need to ___ measures to mitigate financial risks.",
+    "options": [
+      "implement",
+      "execute",
+      "perform",
+      "conduct"
+    ],
+    "correctIndex": 0,
+    "explanation": "措置や対策を実施するには「implement」が最適。"
+  },
+  {
+    "type": "grammar",
+    "category": "Performance Review",
+    "sentence": "Sales have ___ expectations for three consecutive quarters.",
+    "options": [
+      "exceeded",
+      "succeeded",
+      "proceeded",
+      "acceded"
+    ],
+    "correctIndex": 0,
+    "explanation": "期待を上回るは「exceed expectations」という表現。"
+  },
+  {
+    "type": "grammar",
+    "category": "Business Proposals",
+    "sentence": "We would like to ___ a proposal for your consideration.",
+    "options": [
+      "submit",
+      "send",
+      "give",
+      "offer"
+    ],
+    "correctIndex": 0,
+    "explanation": "正式な提案書には「submit」が最もフォーマルで適切。"
+  },
+  {
+    "type": "grammar",
+    "category": "Financial Planning",
+    "sentence": "The budget must be ___ by the finance committee.",
+    "options": [
+      "approved",
+      "agreed",
+      "accepted",
+      "confirmed"
+    ],
+    "correctIndex": 0,
+    "explanation": "予算の承認には「approved」が正式な表現。"
+  },
+  {
+    "type": "grammar",
+    "category": "Mergers & Acquisitions",
+    "sentence": "The acquisition is ___ to close by the end of Q2.",
+    "options": [
+      "expected",
+      "waited",
+      "anticipated",
+      "hoped"
+    ],
+    "correctIndex": 0,
+    "explanation": "「expected to」が最も一般的。anticipatedも可だが、expectedがより標準的。"
+  },
+  {
+    "type": "grammar",
+    "category": "Investor Relations",
+    "sentence": "The company is ___ to transparency in financial reporting.",
+    "options": [
+      "committed",
+      "dedicated",
+      "devoted",
+      "promised"
+    ],
+    "correctIndex": 0,
+    "explanation": "「committed to」が企業姿勢を示す最も適切な表現。"
+  },
+  {
+    "type": "grammar",
+    "category": "Supply Chain",
+    "sentence": "We need to ___ our inventory levels to meet demand.",
+    "options": [
+      "adjust",
+      "change",
+      "modify",
+      "alter"
+    ],
+    "correctIndex": 0,
+    "explanation": "在庫調整には「adjust」が最も自然。ビジネスで頻出の表現。"
+  }
+]
