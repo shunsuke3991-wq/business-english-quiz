@@ -146,13 +146,24 @@ const LABELS = ['A','B','C','D'];
 
 // ---- Cache & Storage ----
 function getCached() {
-  try { const r = localStorage.getItem('beq_' + todayKey()); return r ? JSON.parse(r) : null; } catch(e) { return null; }
+  try {
+    const r = localStorage.getItem('beq_' + todayKey());
+    if (!r) return null;
+    const parsed = JSON.parse(r);
+    // キャッシュのcorrectIndexが全部0なら無効とみなす（シャッフル前のデータ）
+    const allZero = parsed.slice(0,5).every(q => q.correctIndex === 0);
+    if (allZero) { localStorage.removeItem('beq_' + todayKey()); return null; }
+    return parsed;
+  } catch(e) { return null; }
 }
 function setCache(data) {
   try {
     localStorage.setItem('beq_' + todayKey(), JSON.stringify(data));
     Object.keys(localStorage).forEach(k => { if (k.startsWith('beq_') && k !== 'beq_' + todayKey()) localStorage.removeItem(k); });
   } catch(e) {}
+}
+function clearCache() {
+  try { localStorage.removeItem('beq_' + todayKey()); } catch(e) {}
 }
 function getMistakes() {
   try { const r = localStorage.getItem('beq_mistakes'); return r ? JSON.parse(r) : []; } catch(e) { return []; }
@@ -163,7 +174,7 @@ function saveMistakes(mistakes) {
 
 // ---- Fetch ----
 async function fetchQuestions() {
-  const res = await fetch('./questions.json?v=' + todayKey());
+  const res = await fetch('./questions.json?v=' + todayKey() + '_' + Date.now());
   if (!res.ok) throw new Error('questions.json not found: ' + res.status);
   const data = await res.json();
   if (!Array.isArray(data) || data.length < BASE_TOTAL) throw new Error('Invalid questions.json');
