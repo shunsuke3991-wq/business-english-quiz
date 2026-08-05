@@ -1,17 +1,45 @@
 [
   {
     "type": "vocab",
-    "word": "subsidiary",
+    "word": "revenue",
     "partOfSpeech": "noun",
-    "category": "Corporate Structure",
+    "category": "Finance",
+    "options": [
+      "負債",
+      "収益",
+      "費用",
+      "予算"
+    ],
+    "correctIndex": 1,
+    "explanation": "企業の売上高や収益を指す基本的な財務用語。"
+  },
+  {
+    "type": "vocab",
+    "word": "negotiate",
+    "partOfSpeech": "verb",
+    "category": "Business Operations",
+    "options": [
+      "承認する",
+      "交渉する",
+      "拒否する",
+      "延期する"
+    ],
+    "correctIndex": 1,
+    "explanation": "契約や条件について話し合い、合意を目指すこと。"
+  },
+  {
+    "type": "vocab",
+    "word": "stakeholder",
+    "partOfSpeech": "noun",
+    "category": "Management",
     "options": [
       "株主",
-      "補助金",
-      "支出",
-      "子会社"
+      "利害関係者",
+      "経営者",
+      "投資家"
     ],
-    "correctIndex": 3,
-    "explanation": "親会社に支配されている会社のこと。グループ企業構造で重要な用語。"
+    "correctIndex": 1,
+    "explanation": "プロジェクトやビジネスに利害関係を持つすべての人や組織。"
   },
   {
     "type": "vocab",
@@ -19,384 +47,356 @@
     "partOfSpeech": "verb",
     "category": "Risk Management",
     "options": [
-      "回避する",
+      "緩和する",
       "増加させる",
-      "分析する",
-      "緩和する"
-    ],
-    "correctIndex": 3,
-    "explanation": "リスクや問題の影響を和らげること。リスク管理で頻出。"
-  },
-  {
-    "type": "vocab",
-    "word": "feasibility",
-    "partOfSpeech": "noun",
-    "category": "Project Management",
-    "options": [
-      "責任",
-      "柔軟性",
-      "効率性",
-      "実現可能性"
-    ],
-    "correctIndex": 3,
-    "explanation": "計画やプロジェクトが実行可能かどうかを示す概念。"
-  },
-  {
-    "type": "vocab",
-    "word": "procurement",
-    "partOfSpeech": "noun",
-    "category": "Supply Chain",
-    "options": [
-      "輸送",
-      "販売",
-      "製造",
-      "調達"
-    ],
-    "correctIndex": 3,
-    "explanation": "商品やサービスを購入・取得するプロセス。"
-  },
-  {
-    "type": "vocab",
-    "word": "stakeholder",
-    "partOfSpeech": "noun",
-    "category": "Business Strategy",
-    "options": [
-      "利害関係者",
-      "株式仲買人",
-      "経営者",
-      "投資家"
+      "報告する",
+      "分析する"
     ],
     "correctIndex": 0,
-    "explanation": "企業活動に利害関係を持つすべての人々や組織。"
+    "explanation": "リスクや問題の影響を軽減すること。"
   },
   {
     "type": "vocab",
-    "word": "amortize",
-    "partOfSpeech": "verb",
-    "category": "Accounting",
+    "word": "forecast",
+    "partOfSpeech": "noun",
+    "category": "Finance",
     "options": [
-      "償却する",
-      "承認する",
-      "課税する",
-      "監査する"
+      "契約",
+      "報告書",
+      "決算",
+      "予測"
+    ],
+    "correctIndex": 3,
+    "explanation": "将来の売上や業績の予測。動詞としても使われる。"
+  },
+  {
+    "type": "vocab",
+    "word": "compliance",
+    "partOfSpeech": "noun",
+    "category": "Legal",
+    "options": [
+      "遵守",
+      "違反",
+      "提携",
+      "競争"
     ],
     "correctIndex": 0,
-    "explanation": "資産の価値を一定期間にわたって配分すること。会計用語。"
+    "explanation": "法律や規則を守ること。コンプライアンス。"
   },
   {
     "type": "vocab",
-    "word": "benchmark",
+    "word": "allocate",
     "partOfSpeech": "verb",
-    "category": "Performance",
+    "category": "Management",
     "options": [
-      "改善する",
-      "計測する",
+      "配分する",
+      "統合する",
       "評価する",
-      "ベンチマークする"
+      "削減する"
     ],
-    "correctIndex": 3,
-    "explanation": "他社や業界標準と比較して測定すること。"
+    "correctIndex": 0,
+    "explanation": "資源や予算を各部門や目的に割り当てること。"
+  },
+  {
+    "type": "vocab",
+    "word": "merger",
+    "partOfSpeech": "noun",
+    "category": "Corporate",
+    "options": [
+      "買収",
+      "提携",
+      "合併",
+      "分割"
+    ],
+    "correctIndex": 2,
+    "explanation": "二つ以上の会社が一つになること。M&Aの一種。"
+  },
+  {
+    "type": "vocab",
+    "word": "incentive",
+    "partOfSpeech": "noun",
+    "category": "Human Resources",
+    "options": [
+      "報酬",
+      "罰則",
+      "インセンティブ",
+      "契約"
+    ],
+    "correctIndex": 2,
+    "explanation": "従業員の動機づけのための報奨や特典。"
   },
   {
     "type": "vocab",
     "word": "diversify",
     "partOfSpeech": "verb",
-    "category": "Investment",
+    "category": "Strategy",
     "options": [
-      "削減する",
       "集中する",
       "多様化する",
-      "統合する"
+      "統一する",
+      "簡素化する"
     ],
-    "correctIndex": 2,
-    "explanation": "リスク分散のため投資や事業を多角化すること。"
-  },
-  {
-    "type": "vocab",
-    "word": "retention",
-    "partOfSpeph": "noun",
-    "category": "Human Resources",
-    "options": [
-      "維持・定着",
-      "採用",
-      "解雇",
-      "昇進"
-    ],
-    "correctIndex": 0,
-    "explanation": "従業員や顧客を維持すること。人事戦略で重要。"
-  },
-  {
-    "type": "vocab",
-    "word": "comply",
-    "partOfSpeech": "verb",
-    "category": "Legal",
-    "options": [
-      "契約する",
-      "違反する",
-      "遵守する",
-      "提訴する"
-    ],
-    "correctIndex": 2,
-    "explanation": "規則や法律に従うこと。コンプライアンスの動詞形。"
+    "correctIndex": 1,
+    "explanation": "リスク分散のため、事業や投資を多様化すること。"
   },
   {
     "type": "grammar",
     "category": "Business Writing",
-    "sentence": "We would like to ___ our apologies for the delay in shipment.",
+    "sentence": "Please find the report ___ to this email.",
     "options": [
-      "extend",
-      "say",
-      "give",
-      "make"
+      "attached",
+      "attach",
+      "attaching",
+      "attachment"
     ],
     "correctIndex": 0,
-    "explanation": "フォーマルな謝罪では extend one's apologies が最も丁寧な表現。"
+    "explanation": "過去分詞attachedが正解。「添付された」という意味で、findの目的語を補足説明する。"
   },
   {
     "type": "grammar",
-    "category": "Email Etiquette",
-    "sentence": "Thank you for ___ back to me so promptly.",
+    "category": "Formal Communication",
+    "sentence": "We would appreciate it if you could ___ us your decision by Friday.",
     "options": [
-      "return",
-      "reply",
-      "come",
-      "getting"
+      "tell",
+      "inform",
+      "speak",
+      "say"
     ],
-    "correctIndex": 3,
-    "explanation": "get back to someone は返信するという意味の自然な表現。"
+    "correctIndex": 1,
+    "explanation": "inform + 人 + of/about で「知らせる」。フォーマルな表現。"
+  },
+  {
+    "type": "grammar",
+    "category": "Meetings",
+    "sentence": "The meeting has been ___ until next Monday.",
+    "options": [
+      "postponed",
+      "cancelled",
+      "moved",
+      "delayed"
+    ],
+    "correctIndex": 0,
+    "explanation": "postponeは「延期する」の最もフォーマルな表現。delayは遅れるという意味合いが強い。"
+  },
+  {
+    "type": "grammar",
+    "category": "Business Proposals",
+    "sentence": "We are confident that this solution will ___ your expectations.",
+    "options": [
+      "reach",
+      "achieve",
+      "meet",
+      "accomplish"
+    ],
+    "correctIndex": 2,
+    "explanation": "meet expectationsで「期待に応える」という定型表現。"
   },
   {
     "type": "grammar",
     "category": "Negotiations",
-    "sentence": "We are prepared to ___ on the payment terms if necessary.",
+    "sentence": "___ the current market conditions, we need to reconsider our pricing strategy.",
     "options": [
-      "negotiate",
-      "discuss",
-      "talk",
-      "compromise"
+      "Given",
+      "Although",
+      "In spite of",
+      "Despite"
     ],
-    "correctIndex": 3,
-    "explanation": "compromise on は譲歩する意味。交渉で具体的な行動を示す。"
+    "correctIndex": 0,
+    "explanation": "Givenは「〜を考慮すると」という意味。後ろに名詞句が続く。"
   },
   {
     "type": "grammar",
     "category": "Reports",
     "sentence": "Sales have increased ___ 15% compared to last quarter.",
     "options": [
-      "at",
-      "with",
+      "by",
       "for",
-      "by"
+      "with",
+      "at"
     ],
-    "correctIndex": 3,
-    "explanation": "変化の幅を示すときは by を使う。increase by 15% が正しい形。"
+    "correctIndex": 0,
+    "explanation": "increase by + 割合/数値で「〜だけ増加する」という意味。"
   },
   {
     "type": "grammar",
-    "category": "Meetings",
-    "sentence": "Let's ___ on this issue and come back to it later.",
+    "category": "Business Writing",
+    "sentence": "I am writing ___ to your inquiry regarding our new product line.",
     "options": [
-      "table",
-      "hold",
-      "shelf",
-      "desk"
+      "in response",
+      "for response",
+      "as response",
+      "to respond"
     ],
     "correctIndex": 0,
-    "explanation": "table は議論を一時保留にするという意味の動詞として使われる。"
+    "explanation": "in response toで「〜に応えて」という定型表現。ビジネスメールで頻出。"
   },
   {
     "type": "grammar",
     "category": "Presentations",
-    "sentence": "I'd like to ___ your attention to the chart on slide 5.",
+    "sentence": "Let me ___ by introducing our company's background.",
     "options": [
-      "draw",
-      "take",
-      "bring",
-      "put"
+      "initiate",
+      "begin",
+      "start",
+      "commence"
     ],
-    "correctIndex": 0,
-    "explanation": "draw attention to は注意を引くという定型表現。プレゼンで頻出。"
+    "correctIndex": 2,
+    "explanation": "start byで「〜から始める」。beginも可能だがstartの方が自然。"
   },
   {
     "type": "grammar",
-    "category": "Proposals",
-    "sentence": "This solution would ___ significant cost savings for your company.",
+    "category": "Contracts",
+    "sentence": "Both parties must ___ to the terms and conditions outlined in this agreement.",
     "options": [
-      "yield",
-      "do",
-      "make",
-      "produce"
-    ],
-    "correctIndex": 0,
-    "explanation": "yield は結果や利益を生み出すという意味でビジネスでよく使われる。"
-  },
-  {
-    "type": "grammar",
-    "category": "Formal Requests",
-    "sentence": "Would it be possible to ___ the deadline by one week?",
-    "options": [
-      "enlarge",
-      "extend",
-      "increase",
-      "expand"
+      "agree",
+      "adhere",
+      "accept",
+      "comply"
     ],
     "correctIndex": 1,
-    "explanation": "extend the deadline は期限を延長するという標準的な表現。"
+    "explanation": "adhere to で「〜を遵守する」。契約書で使われる正式な表現。"
+  },
+  {
+    "type": "grammar",
+    "category": "Project Management",
+    "sentence": "The project is currently ___ schedule and within budget.",
+    "options": [
+      "in",
+      "at",
+      "on",
+      "by"
+    ],
+    "correctIndex": 2,
+    "explanation": "on scheduleで「予定通り」という定型表現。"
   },
   {
     "type": "grammar",
     "category": "Business Correspondence",
-    "sentence": "Please find ___ the revised contract for your review.",
+    "sentence": "Thank you for ___ us the opportunity to present our proposal.",
     "options": [
-      "attachment",
-      "attached",
-      "attach",
-      "attaching"
+      "offering",
+      "providing",
+      "giving",
+      "granting"
+    ],
+    "correctIndex": 2,
+    "explanation": "give/offer someone the opportunityが一般的。givingが最も自然。"
+  },
+  {
+    "type": "grammar",
+    "category": "Financial Reports",
+    "sentence": "Our profits have declined ___ a result of increased competition.",
+    "options": [
+      "in",
+      "as",
+      "by",
+      "for"
     ],
     "correctIndex": 1,
-    "explanation": "Please find attached は添付書類を示す定型表現。過去分詞を使う。"
+    "explanation": "as a result of で「〜の結果として」という定型表現。"
   },
   {
     "type": "grammar",
-    "category": "Contract Language",
-    "sentence": "Either party may terminate this agreement ___ 30 days' notice.",
+    "category": "Business Strategy",
+    "sentence": "We need to ___ our market share in the Asian region.",
     "options": [
-      "in",
-      "after",
-      "with",
-      "by"
-    ],
-    "correctIndex": 2,
-    "explanation": "with notice は通知を伴ってという意味。契約書の標準表現。"
-  },
-  {
-    "type": "grammar",
-    "category": "Performance Reviews",
-    "sentence": "She has consistently ___ expectations in her role.",
-    "options": [
-      "overcome",
-      "achieved",
-      "passed",
-      "exceeded"
+      "increase",
+      "extend",
+      "enlarge",
+      "expand"
     ],
     "correctIndex": 3,
-    "explanation": "exceed expectations は期待を上回るという評価でよく使われる表現。"
+    "explanation": "expand market shareが最も自然な表現。expandは事業拡大によく使われる。"
   },
   {
     "type": "grammar",
-    "category": "Project Updates",
-    "sentence": "The project is currently ___ schedule and within budget.",
+    "category": "Formal Requests",
+    "sentence": "Would you be ___ to arrange a meeting for next week?",
     "options": [
-      "by",
-      "in",
-      "on",
-      "at"
+      "capable",
+      "willing",
+      "possible",
+      "able"
     ],
-    "correctIndex": 2,
-    "explanation": "on schedule は予定通りという意味の固定表現。"
+    "correctIndex": 3,
+    "explanation": "be able toで「〜できる」。Would you be able to...?は丁寧な依頼表現。"
   },
   {
     "type": "grammar",
-    "category": "Client Relations",
-    "sentence": "We appreciate your patience ___ we resolve this matter.",
+    "category": "Business Updates",
+    "sentence": "I would like to ___ you updated on the progress of the project.",
     "options": [
-      "when",
-      "during",
-      "while",
-      "as"
+      "make",
+      "keep",
+      "let",
+      "have"
     ],
-    "correctIndex": 2,
-    "explanation": "while は進行中の行動を示す。appreciate と相性が良い接続詞。"
-  },
-  {
-    "type": "grammar",
-    "category": "Financial Reporting",
-    "sentence": "The company's revenue ___ steady growth over the past year.",
-    "options": [
-      "made",
-      "had",
-      "showed",
-      "did"
-    ],
-    "correctIndex": 2,
-    "explanation": "show growth は成長を示すという自然な表現。財務報告で頻出。"
-  },
-  {
-    "type": "grammar",
-    "category": "Strategic Planning",
-    "sentence": "We need to ___ into account the current market conditions.",
-    "options": [
-      "take",
-      "put",
-      "bring",
-      "make"
-    ],
-    "correctIndex": 0,
-    "explanation": "take into account は考慮するという意味の重要なイディオム。"
+    "correctIndex": 1,
+    "explanation": "keep someone updatedで「〜に最新情報を伝え続ける」という定型表現。"
   },
   {
     "type": "native",
     "category": "Meetings",
-    "situation": "会議で自分の意見を述べる前に、前置きとして使う自然な表現は？",
+    "situation": "会議で自分の意見を述べる前に、他の人の考えを聞きたい。自然な表現は？",
     "options": [
-      "If I may add something here...",
-      "Listen to my opinion...",
-      "I want to say...",
-      "I think maybe possibly..."
+      "I'd like to hear your thoughts on this.",
+      "What do you think?",
+      "What's your idea?",
+      "Tell me your opinion."
     ],
     "correctIndex": 0,
-    "explanation": "If I may は丁寧に発言権を求める表現。ネイティブがよく使う自然なフレーズ。"
+    "explanation": "I'd like to hear your thoughts が最も丁寧でビジネス的。What do you think? もOKだが、よりカジュアル。"
   },
   {
     "type": "native",
     "category": "Emails",
-    "situation": "メールで相手に何かを依頼した後、文末に添える自然な表現は？",
+    "situation": "メールで添付ファイルを送る際、ネイティブがよく使う表現は？",
     "options": [
-      "I am waiting for you.",
-      "I wait your answer.",
-      "Please reply me soon.",
-      "I look forward to hearing from you."
+      "I attach the file.",
+      "Please find attached the file.",
+      "I'm attaching the file with this email.",
+      "The file is attached."
     ],
-    "correctIndex": 3,
-    "explanation": "I look forward to hearing from you はビジネスメールの標準的な結び。最も自然でフォーマル。"
-  },
-  {
-    "type": "native",
-    "category": "Small Talk",
-    "situation": "久しぶりに会った取引先との会話の始め方として最も自然な表現は？",
-    "options": [
-      "You are here finally.",
-      "Long time no see!",
-      "It's been a while! How have you been?",
-      "I didn't see you for long time."
-    ],
-    "correctIndex": 2,
-    "explanation": "It's been a while はビジネスでも使えるカジュアルすぎない挨拶。How have you been? で相手を気遣う。"
+    "correctIndex": 1,
+    "explanation": "Please find attached... はビジネスメールで最も標準的な表現。非常にフォーマル。"
   },
   {
     "type": "native",
     "category": "Negotiations",
-    "situation": "交渉中、相手の提案を丁寧に断りたい時の自然な表現は？",
+    "situation": "価格交渉で、相手の提案を丁寧に断りたい。最も自然な表現は？",
     "options": [
-      "We cannot accept it.",
-      "I'm afraid that doesn't quite work for us.",
-      "That's impossible for us.",
-      "No, we don't want that."
+      "Your price is too high.",
+      "I'm afraid that's beyond our budget.",
+      "That's too expensive.",
+      "We can't accept that price."
     ],
     "correctIndex": 1,
-    "explanation": "I'm afraid... doesn't quite work for us は婉曲的で丁寧な断り方。関係維持に配慮した表現。"
+    "explanation": "I'm afraid... で始めると柔らかく丁寧に断れる。beyond our budgetも婉曲的で適切。"
+  },
+  {
+    "type": "native",
+    "category": "Small Talk",
+    "situation": "オンライン会議の冒頭で、相手の体調を気遣う自然な表現は？",
+    "options": [
+      "Are you healthy?",
+      "How are you doing?",
+      "Are you fine?",
+      "Is your condition good?"
+    ],
+    "correctIndex": 1,
+    "explanation": "How are you doing? が最も自然。Are you fine? は不自然で、通常 Are you OK? と言う。"
   },
   {
     "type": "native",
     "category": "Problem Solving",
-    "situation": "会議で問題解決のアイデアを提案する時の自然な切り出し方は？",
+    "situation": "問題が発生したが、解決策を持っていることを伝えたい。ネイティブらしい表現は？",
     "options": [
-      "I have one idea to say.",
-      "Listen my suggestion.",
-      "What if we tried approaching it from a different angle?",
-      "My thinking is this way."
+      "I know how to fix it.",
+      "I think I have a way to work around this.",
+      "I can solve this.",
+      "I have a solution for this problem."
     ],
-    "correctIndex": 2,
-    "explanation": "What if we... は提案を柔らかく提示する自然な表現。チームワークを重視する言い方。"
+    "correctIndex": 1,
+    "explanation": "work around は「回避策を見つける」という意味。I think I have a way to... は控えめで自然なビジネス表現。"
   }
 ]
