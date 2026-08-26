@@ -1,115 +1,17 @@
 [
   {
     "type": "vocab",
-    "word": "leverage",
-    "partOfSpeech": "verb",
-    "category": "Finance",
-    "options": [
-      "分析する",
-      "融資する",
-      "削減する",
-      "活用する"
-    ],
-    "correctIndex": 3,
-    "explanation": "資産や強みを最大限に活用すること。ビジネスで頻出。"
-  },
-  {
-    "type": "vocab",
-    "word": "stakeholder",
-    "partOfSpeech": "noun",
-    "category": "Business Management",
-    "options": [
-      "利害関係者",
-      "株主",
-      "投資家",
-      "経営者"
-    ],
-    "correctIndex": 0,
-    "explanation": "企業活動に関わるすべての利害関係者を指す広い概念。"
-  },
-  {
-    "type": "vocab",
-    "word": "defer",
+    "word": "deteriorate",
     "partOfSpeech": "verb",
     "category": "Business Operations",
     "options": [
-      "拒否する",
-      "延期する",
-      "承認する",
-      "配布する"
+      "拡大する",
+      "悪化する",
+      "改善する",
+      "維持する"
     ],
     "correctIndex": 1,
-    "explanation": "決定や支払いなどを後回しにすること。"
-  },
-  {
-    "type": "vocab",
-    "word": "ROI",
-    "partOfSpeech": "noun",
-    "category": "Finance",
-    "options": [
-      "売上高",
-      "投資利益率",
-      "市場シェア",
-      "純利益"
-    ],
-    "correctIndex": 1,
-    "explanation": "Return on Investmentの略。投資に対する利益の割合。"
-  },
-  {
-    "type": "vocab",
-    "word": "compliance",
-    "partOfSpeech": "noun",
-    "category": "Legal/Regulatory",
-    "options": [
-      "完成",
-      "妥協",
-      "遵守",
-      "競争"
-    ],
-    "correctIndex": 2,
-    "explanation": "法令や規則を守ること。コンプライアンス。"
-  },
-  {
-    "type": "vocab",
-    "word": "benchmark",
-    "partOfSpeech": "verb",
-    "category": "Business Strategy",
-    "options": [
-      "比較分析する",
-      "達成する",
-      "予測する",
-      "実施する"
-    ],
-    "correctIndex": 0,
-    "explanation": "他社や業界標準と比較して評価すること。"
-  },
-  {
-    "type": "vocab",
-    "word": "downsizing",
-    "partOfSpeech": "noun",
-    "category": "Human Resources",
-    "options": [
-      "人員削減",
-      "配置転換",
-      "採用活動",
-      "昇進"
-    ],
-    "correctIndex": 0,
-    "explanation": "組織の規模を縮小すること。特に人員削減を指す。"
-  },
-  {
-    "type": "vocab",
-    "word": "expedite",
-    "partOfSpeech": "verb",
-    "category": "Business Operations",
-    "options": [
-      "延期する",
-      "中止する",
-      "迅速化する",
-      "確認する"
-    ],
-    "correctIndex": 2,
-    "explanation": "プロセスや作業を早めること。"
+    "explanation": "状況や関係が悪化することを意味する。Market conditions deteriorated rapidly."
   },
   {
     "type": "vocab",
@@ -117,13 +19,27 @@
     "partOfSpeech": "noun",
     "category": "Corporate Structure",
     "options": [
+      "競合他社",
       "本社",
-      "子会社",
-      "支社",
-      "関連会社"
+      "取引先",
+      "子会社"
+    ],
+    "correctIndex": 3,
+    "explanation": "親会社に支配されている会社。Our subsidiary in Tokyo handles Asian operations."
+  },
+  {
+    "type": "vocab",
+    "word": "mitigate",
+    "partOfSpeech": "verb",
+    "category": "Risk Management",
+    "options": [
+      "増加させる",
+      "軽減する",
+      "評価する",
+      "無視する"
     ],
     "correctIndex": 1,
-    "explanation": "親会社に支配されている会社。"
+    "explanation": "リスクや問題の深刻さを軽減する。We need to mitigate potential risks."
   },
   {
     "type": "vocab",
@@ -131,272 +47,356 @@
     "partOfSpeech": "noun",
     "category": "Accounting",
     "options": [
-      "計上",
-      "監査",
-      "償却",
-      "合併"
+      "予算編成",
+      "減価償却",
+      "利益配分",
+      "資産評価"
+    ],
+    "correctIndex": 1,
+    "explanation": "無形資産の価値を期間にわたって償却すること。Amortization of intangible assets."
+  },
+  {
+    "type": "vocab",
+    "word": "remuneration",
+    "partOfSpeech": "noun",
+    "category": "Human Resources",
+    "options": [
+      "昇進",
+      "研修",
+      "報酬",
+      "解雇"
     ],
     "correctIndex": 2,
-    "explanation": "資産の価値を時間とともに減少させる会計処理。"
+    "explanation": "仕事に対する報酬や給与。Executive remuneration package includes bonuses."
+  },
+  {
+    "type": "vocab",
+    "word": "liability",
+    "partOfSpeech": "noun",
+    "category": "Finance",
+    "options": [
+      "資産",
+      "費用",
+      "収益",
+      "負債"
+    ],
+    "correctIndex": 3,
+    "explanation": "会計上の債務や義務。Total liabilities exceed assets."
+  },
+  {
+    "type": "vocab",
+    "word": "comply",
+    "partOfSpeech": "verb",
+    "category": "Legal",
+    "options": [
+      "拒否する",
+      "交渉する",
+      "違反する",
+      "従う"
+    ],
+    "correctIndex": 3,
+    "explanation": "規則や法律に従うこと。All employees must comply with company policies."
+  },
+  {
+    "type": "vocab",
+    "word": "equity",
+    "partOfSpeech": "noun",
+    "category": "Finance",
+    "options": [
+      "利息",
+      "負債",
+      "手数料",
+      "株式資本"
+    ],
+    "correctIndex": 3,
+    "explanation": "株主資本や純資産。The company raised equity through a public offering."
+  },
+  {
+    "type": "vocab",
+    "word": "obsolete",
+    "partOfSpeech": "adjective",
+    "category": "Technology",
+    "options": [
+      "効率的な",
+      "最新の",
+      "時代遅れの",
+      "高価な"
+    ],
+    "correctIndex": 2,
+    "explanation": "技術や製品が古くなり使われなくなった状態。This technology is now obsolete."
+  },
+  {
+    "type": "vocab",
+    "word": "incentive",
+    "partOfSpeech": "noun",
+    "category": "Human Resources",
+    "options": [
+      "罰則",
+      "動機付け",
+      "評価",
+      "契約"
+    ],
+    "correctIndex": 1,
+    "explanation": "行動を促すための報奨や刺激。Performance incentives boost productivity."
   },
   {
     "type": "grammar",
     "category": "Business Writing",
-    "sentence": "I am writing to ___ your interest in our proposal.",
+    "sentence": "We would appreciate it if you could ___ the documents by Friday.",
     "options": [
-      "verify",
-      "check",
-      "ask",
-      "confirm"
+      "to submit",
+      "submitting",
+      "submit",
+      "submitted"
     ],
-    "correctIndex": 3,
-    "explanation": "フォーマルなビジネスメールではconfirmを使う。checkはカジュアルすぎる。"
+    "correctIndex": 2,
+    "explanation": "if you couldの後は動詞の原形。submitが正解。丁寧な依頼表現。"
   },
   {
     "type": "grammar",
-    "category": "Conditional",
-    "sentence": "If we ___ the budget earlier, we could have hired more staff.",
+    "category": "Conditionals",
+    "sentence": "If we ___ the deadline, we will lose the client.",
     "options": [
-      "would receive",
-      "received",
-      "had received",
-      "receive"
+      "missed",
+      "will miss",
+      "miss",
+      "would miss"
     ],
     "correctIndex": 2,
-    "explanation": "過去の事実と反対の仮定なので、過去完了(had received)を使う。"
+    "explanation": "第一条件文では、if節に現在形を使う。will missは誤り。"
   },
   {
     "type": "grammar",
     "category": "Passive Voice",
-    "sentence": "The contract ___ by both parties yesterday.",
+    "sentence": "The proposal ___ by the committee yesterday.",
     "options": [
-      "is signed",
-      "has signed",
-      "signed",
-      "was signed"
+      "has approved",
+      "approved",
+      "is approved",
+      "was approved"
     ],
     "correctIndex": 3,
-    "explanation": "yesterdayがあるので過去形。契約は「署名される」なので受動態。"
+    "explanation": "yesterdayがあるので過去形の受動態が必要。was approvedが正解。"
+  },
+  {
+    "type": "grammar",
+    "category": "Reported Speech",
+    "sentence": "The manager said that she ___ the budget next week.",
+    "options": [
+      "reviews",
+      "would review",
+      "reviewed",
+      "will review"
+    ],
+    "correctIndex": 1,
+    "explanation": "主節が過去形なので、従属節もwould reviewと過去形にする必要がある。"
   },
   {
     "type": "grammar",
     "category": "Prepositions",
     "sentence": "We need to focus ___ improving customer satisfaction.",
     "options": [
-      "to",
-      "on",
       "in",
-      "at"
+      "on",
+      "at",
+      "to"
     ],
     "correctIndex": 1,
-    "explanation": "focus on ～ で「～に集中する」という意味の定型表現。"
+    "explanation": "focus onは「~に集中する」の意味。onが正しい前置詞。"
   },
   {
     "type": "grammar",
     "category": "Modal Verbs",
-    "sentence": "You ___ submit the report by Friday at the latest.",
+    "sentence": "You ___ submit the expense report within 30 days.",
     "options": [
       "might",
+      "must",
       "can",
-      "may",
-      "must"
-    ],
-    "correctIndex": 3,
-    "explanation": "期限がある義務を表すのでmustが適切。"
-  },
-  {
-    "type": "grammar",
-    "category": "Relative Clauses",
-    "sentence": "The consultant ___ we hired last month has excellent credentials.",
-    "options": [
-      "whose",
-      "who",
-      "what",
-      "which"
+      "may"
     ],
     "correctIndex": 1,
-    "explanation": "人を先行詞とする主格の関係代名詞はwho。"
+    "explanation": "義務を表す場合はmustを使う。規則や要件を述べる文脈。"
   },
   {
     "type": "grammar",
-    "category": "Articles",
-    "sentence": "We achieved ___ 15% increase in sales this quarter.",
+    "category": "Business Writing",
+    "sentence": "Please find ___ the meeting agenda for your review.",
     "options": [
-      "a",
-      "an",
-      "the",
-      "―"
-    ],
-    "correctIndex": 0,
-    "explanation": "fifteenは子音で始まるのでa。percentageの前にはa/anをつける。"
-  },
-  {
-    "type": "grammar",
-    "category": "Verb Tenses",
-    "sentence": "By next month, we ___ in this office for five years.",
-    "options": [
-      "have worked",
-      "will work",
-      "work",
-      "will have worked"
-    ],
-    "correctIndex": 3,
-    "explanation": "未来のある時点までの継続を表すので未来完了形を使う。"
-  },
-  {
-    "type": "grammar",
-    "category": "Reported Speech",
-    "sentence": "The CEO said that she ___ the new policy next week.",
-    "options": [
-      "will announce",
-      "would announce",
-      "announced",
-      "announces"
-    ],
-    "correctIndex": 1,
-    "explanation": "主節が過去形なので、時制の一致でwould announceになる。"
-  },
-  {
-    "type": "grammar",
-    "category": "Gerunds and Infinitives",
-    "sentence": "We look forward to ___ with you on this project.",
-    "options": [
-      "worked",
-      "work",
-      "working",
-      "be working"
+      "attachment",
+      "attach",
+      "attached",
+      "attaching"
     ],
     "correctIndex": 2,
-    "explanation": "look forward to の後は動名詞(～ing)。toは前置詞。"
+    "explanation": "Please find attached は「添付をご確認ください」の定型表現。attachedが正解。"
   },
   {
     "type": "grammar",
     "category": "Comparatives",
-    "sentence": "Our new system is ___ more efficient than the previous one.",
+    "sentence": "This quarter's results are ___ than we expected.",
     "options": [
-      "too",
-      "much",
-      "so",
-      "very"
+      "much better",
+      "more good",
+      "very better",
+      "more better"
     ],
-    "correctIndex": 1,
-    "explanation": "比較級を強調するにはmuchを使う。veryは不可。"
+    "correctIndex": 0,
+    "explanation": "betterは比較級なのでmoreは不要。強調にはmuchを使う。"
   },
   {
     "type": "grammar",
-    "category": "Conjunctions",
-    "sentence": "___ the challenges, we managed to complete the project on time.",
+    "category": "Present Perfect",
+    "sentence": "We ___ three new clients since January.",
     "options": [
-      "Despite",
-      "However",
-      "Although",
-      "Even"
+      "have acquired",
+      "acquired",
+      "are acquiring",
+      "will acquire"
     ],
     "correctIndex": 0,
-    "explanation": "後ろに名詞(the challenges)が来るのでDespite。Althoughは節を取る。"
+    "explanation": "since Januaryがあるので現在完了形を使う。have acquiredが正解。"
+  },
+  {
+    "type": "grammar",
+    "category": "Gerunds and Infinitives",
+    "sentence": "The company decided ___ its operations overseas.",
+    "options": [
+      "expand",
+      "to expand",
+      "expanded",
+      "expanding"
+    ],
+    "correctIndex": 1,
+    "explanation": "decide to doの形。decidedの後は不定詞to expandを使う。"
+  },
+  {
+    "type": "grammar",
+    "category": "Articles",
+    "sentence": "We need to hire ___ experienced project manager.",
+    "options": [
+      "a",
+      "—",
+      "an",
+      "the"
+    ],
+    "correctIndex": 2,
+    "explanation": "experiencedは母音で始まる音なのでanを使う。初出なので定冠詞theは不適切。"
+  },
+  {
+    "type": "grammar",
+    "category": "Relative Clauses",
+    "sentence": "The candidate ___ we interviewed yesterday has excellent qualifications.",
+    "options": [
+      "who",
+      "whom",
+      "which",
+      "what"
+    ],
+    "correctIndex": 1,
+    "explanation": "interviewedの目的語なのでwhomが正しい。口語ではwhoも許容される。"
   },
   {
     "type": "grammar",
     "category": "Subjunctive",
-    "sentence": "It is essential that every employee ___ the new security protocol.",
+    "sentence": "It is essential that all staff ___ the training session.",
     "options": [
-      "follow",
-      "followed",
-      "follows",
-      "will follow"
-    ],
-    "correctIndex": 0,
-    "explanation": "It is essential thatの後は仮定法現在で動詞の原形を使う。"
-  },
-  {
-    "type": "grammar",
-    "category": "Phrasal Verbs",
-    "sentence": "We need to ___ a solution to this problem as soon as possible.",
-    "options": [
-      "come up to",
-      "come down",
-      "come up with",
-      "come across"
+      "attended",
+      "will attend",
+      "attend",
+      "attends"
     ],
     "correctIndex": 2,
-    "explanation": "come up with で「(アイデアなどを)思いつく、考え出す」という意味。"
+    "explanation": "It is essential thatの後は仮定法現在で動詞の原形を使う。attendが正解。"
   },
   {
     "type": "grammar",
-    "category": "Business Vocabulary",
-    "sentence": "The merger will ___ significant cost savings for both companies.",
+    "category": "Conjunctions",
+    "sentence": "We will proceed with the project ___ the budget is approved.",
     "options": [
-      "carry out",
-      "take in",
-      "put off",
-      "bring about"
+      "provided that",
+      "despite",
+      "in spite of",
+      "although"
     ],
-    "correctIndex": 3,
-    "explanation": "bring about で「もたらす、引き起こす」。結果を生み出す表現。"
+    "correctIndex": 0,
+    "explanation": "条件を表すprovided that(~という条件で)が適切。despiteは名詞を取る。"
+  },
+  {
+    "type": "grammar",
+    "category": "Formal Expressions",
+    "sentence": "We look forward to ___ from you soon.",
+    "options": [
+      "hearing",
+      "heard",
+      "hear",
+      "be hearing"
+    ],
+    "correctIndex": 0,
+    "explanation": "look forward toの後は動名詞。hearingが正解。ビジネスメールの定型表現。"
   },
   {
     "type": "native",
     "category": "Meetings",
-    "situation": "会議中、相手の発言が聞き取れなかった。自然な英語でどう聞き返す？",
+    "situation": "会議で発言したいが、他の人が話している。自然に割り込むには？",
     "options": [
-      "Could you say that again, please?",
-      "Speak louder.",
-      "What did you say?",
-      "I don't understand."
+      "Be quiet for a moment.",
+      "Stop talking, please.",
+      "Wait, I want to speak.",
+      "Sorry to interrupt, but may I add something?"
     ],
-    "correctIndex": 0,
-    "explanation": "Could you say that again? が最も丁寧で自然。What did you say? はやや失礼に聞こえることがある。"
+    "correctIndex": 3,
+    "explanation": "Sorry to interrupt, but...が最も丁寧で自然。ビジネスシーンで頻用される。"
   },
   {
     "type": "native",
     "category": "Emails",
-    "situation": "メールで資料送付を依頼したい。ネイティブらしい丁寧な表現は？",
+    "situation": "メールで相手に情報を求める際、丁寧にお願いするには？",
     "options": [
-      "I want the documents.",
-      "You must send the documents now.",
-      "Send me the documents.",
-      "Could you please send me the documents at your earliest convenience?"
-    ],
-    "correctIndex": 3,
-    "explanation": "Could you please～とat your earliest convenienceで丁寧で自然な依頼表現になる。"
-  },
-  {
-    "type": "native",
-    "category": "Small Talk",
-    "situation": "クライアントとの商談前の雑談。週末について自然に聞くフレーズは？",
-    "options": [
-      "What did you do on weekend?",
-      "Tell me your weekend.",
-      "How was your weekend?",
-      "Did you enjoy?"
+      "I need the data now.",
+      "Send me the data.",
+      "Could you please send me the data at your earliest convenience?",
+      "Give me the information."
     ],
     "correctIndex": 2,
-    "explanation": "How was your weekend? が最も自然。ビジネスシーンでの定番の雑談フレーズ。"
+    "explanation": "Could you please...at your earliest convenienceが最もフォーマルで丁寧な表現。"
   },
   {
     "type": "native",
     "category": "Negotiations",
-    "situation": "価格交渉で、相手の提案を丁寧に断りたい。ネイティブが使う表現は？",
+    "situation": "価格交渉で、相手の提案を丁寧に断りつつ代案を示したい。",
     "options": [
-      "We can't pay that.",
-      "No, that's too expensive.",
-      "I'm afraid that's a bit beyond our budget.",
-      "Your price is bad."
+      "No, we can't accept that price.",
+      "Your price is unreasonable.",
+      "I appreciate your offer, but we were hoping for something closer to our budget.",
+      "That's too expensive. Lower the price."
     ],
     "correctIndex": 2,
-    "explanation": "I'm afraid～を使い、a bit beyond our budgetで婉曲に断るのが自然で丁寧。"
+    "explanation": "I appreciate... but...の形で感謝を示しつつ丁寧に異なる意見を述べる。交渉の基本。"
+  },
+  {
+    "type": "native",
+    "category": "Small Talk",
+    "situation": "初対面のクライアントとエレベーターで一緒になった。自然な雑談の始め方は？",
+    "options": [
+      "Are you married?",
+      "Why are you here?",
+      "What's your salary?",
+      "How was your weekend?"
+    ],
+    "correctIndex": 3,
+    "explanation": "How was your weekend?は安全で自然な雑談トピック。給与や結婚状況は不適切。"
   },
   {
     "type": "native",
     "category": "Presentations",
-    "situation": "プレゼンの最後に質問を促したい。ネイティブらしい表現は？",
+    "situation": "プレゼン中に質問を後回しにしたい。自然な英語表現は？",
     "options": [
-      "Do you have questions?",
-      "I'd be happy to take any questions you might have.",
-      "Any questions?",
-      "Ask me if you want."
+      "Don't ask questions now.",
+      "Be quiet until I finish.",
+      "I'll take questions at the end.",
+      "Stop interrupting me."
     ],
-    "correctIndex": 1,
-    "explanation": "I'd be happy to take any questions が最もプロフェッショナルで好意的な印象を与える。"
+    "correctIndex": 2,
+    "explanation": "I'll take questions at the endが標準的で丁寧な表現。プレゼンで頻用される。"
   }
 ]
